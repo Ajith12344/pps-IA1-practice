@@ -8,7 +8,8 @@ int input_n()
 }
 int sum_n(int n)
 {
-  for(int i=0;i<=n;i++)
+  int i,sum;
+  for(i=0;i<=n;i++)
   {
     sum=sum+i;
   }
@@ -20,11 +21,9 @@ void output(int n,int sum)
 }
 int main()
 {
- int a,b;
- a=input_n();
- b=sum_n();
- output(a,b);
+ int n,sum;
+ n=input_n();
+ sum=sum_n(n);
+ output(n,sum);
  return 0;
-
-
 }
